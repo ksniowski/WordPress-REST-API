@@ -9,7 +9,7 @@
 * [Setup](#setup)
 
 ## General info
-This Angular project is use of [WordPress REST API](https://developer.wordpress.com/docs/api/) to get posts and comments sequentially after button click.
+This [Angular](https://angular.io) project is use of [WordPress REST API](https://developer.wordpress.com/docs/api/) to get posts and comments sequentially after button click.
 
 ## Code organization
     .

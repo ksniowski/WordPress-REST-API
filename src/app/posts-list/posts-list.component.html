@@ -1,0 +1,3 @@
+<div *ngFor="let post of posts$ | async" class="single-post-wrapper">
+    <app-post class="single-post row" [post]="post"></app-post>
+</div>

@@ -1,0 +1,18 @@
+<div class="thumbnail col-4" [style.backgroundImage]="'url('+post.thumbnail+')'"></div>
+
+<div class="post_content col-8">
+  <div class="post_id">#{{post.id}}</div>
+  <div class="post_title">
+    <h2>
+      <a href="{{post.url}}" [innerHTML]="post.title"></a>
+    </h2>
+  </div>
+  <div class="post_description" [innerHTML]="post.excerpt"></div>
+  <div class="post_details row">
+    <div class="post_author col-md-6">
+      <img class="avatar" src="{{post.avatar}}" alt="{{post.author}}"/> {{post.author}}
+    </div>
+    <div class="post_date col-md-6">{{post.date | date: 'dd.MM.yyyy'}}</div>
+      <app-comments-list class="post_comments col-md-12" [postId]="post.id"></app-comments-list>
+  </div>
+</div>
